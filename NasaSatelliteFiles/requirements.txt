@@ -1,0 +1,13 @@
+######## Required Packages #######
+# pip install -r requirements.txt
+
+beautifulsoup4
+matplotlib
+numpy
+pandas
+requests
+requests-html
+retrying
+scikit-learn
+selenium --ignore-installed certifi
+# pyvirtualdisplay
