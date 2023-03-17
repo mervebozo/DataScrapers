@@ -22,7 +22,7 @@ class FileDownloaderNASA(Scraper):
 
     def request(self):
         try:
-            self._driver.find_element_by_xPath_selector('//*[@id="button-download"]').click()
+            self._driver.find_element_by_xpath_selector('//*[@id="button-download"]').click()
         except:
             print(self._log_msg + " could not be downloaded.")
             return True

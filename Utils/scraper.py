@@ -29,7 +29,7 @@ class Scraper:
     @retry(retry_on_exception=retryIfSpecificDriverException, stop_max_attempt_number=3, wait_random_min=4000,
            wait_random_max=6000)
     def run_chrome_driver_once(self, requestTimeout=None):
-        self._driver = ChromeDriver(driverPath=self._driverPath, prefs=self._prefs)
+        self._driver = ChromeDriver(driver_path=self._driverPath, prefs=self._prefs)
         self._driver.get(self._url, requestTimeout)
         response = self.request()
         if response:
